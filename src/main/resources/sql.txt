@@ -1,0 +1,12 @@
+USE rpc;
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE IF NOT EXISTS `user`(
+	`id` INT UNSIGNED NOT NULL,
+	`username` VARCHAR(255),
+	`sex` TINYINT(1),
+	PRIMARY KEY(`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO user(id,username,sex) VALUES
+(1,"张三",1),
+(2,"李丽",0);
